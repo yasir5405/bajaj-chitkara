@@ -20,3 +20,33 @@ export interface ApiResponse {
   duplicate_edges: string[];
   summary: Summary;
 }
+
+export interface Edge {
+  parent: string;
+  child: string;
+  raw: string;
+}
+
+export interface ValidationResult {
+  validEdges: Edge[];
+  invalidEntries: string[];
+}
+
+export interface DuplicateResult {
+  uniqueEdges: Edge[];
+  duplicateEdges: string[];
+}
+
+export interface ParentResolutionResult {
+  edges: Edge[];
+}
+
+export interface GraphBuildResult {
+  graph: Map<string, string[]>;
+  allNodes: Set<string>;
+  childNodes: Set<string>;
+}
+
+export interface Component {
+  nodes: string[];
+}
