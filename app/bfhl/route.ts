@@ -15,7 +15,7 @@ export async function OPTIONS() {
 
 export async function POST() {
   const response: ApiResponse = {
-    user_id: "yasir_naseem_03112004",
+    user_id: "yasirnaseem_03112004",
     email_id: "yasir0393.be23@chitkara.edu.in",
     college_roll_number: "2310990393",
     hierarchies: [],
